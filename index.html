@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
     <title>MI PRIMERA PAGINA WEB - MOTOS</title>
 
     <style>
@@ -60,25 +59,20 @@
             border-radius: 5px;
         }
     </style>
-
 </head>
 
 <body>
 
-    <!-- BOTÓN TEMA -->
     <div style="text-align:center;">
         <button id="boton">TEMA</button>
     </div>
 
     <script>
         let boton = document.getElementById("boton");
-
         boton.onclick = function() {
             document.body.classList.toggle("light-mode");
         }
     </script>
-
-    <!-- ===== CONTENIDO ORIGINAL ===== -->
 
     <h1 style="border: 5px solid orange;background: orange;color:black;text-align:center;">
         EL MUNDO DE LAS MOTOS
@@ -91,8 +85,6 @@
     <p>
         Existen diferentes tipos de motos según su uso: deportivas, chopper, touring, enduro y scooters.
     </p>
-
-    <!-- ===== NUEVA INFO AGREGADA ===== -->
 
     <h3 style="background:red;color:white;text-align:center;">¿QUÉ SON LAS MOTOCICLETAS?</h3>
 
@@ -125,10 +117,8 @@
     <h3 style="background:purple;color:white;text-align:center;">DATO INTERESANTE</h3>
 
     <p>
-        Algunas motos deportivas pueden superar los 300 km/h, como la Yamaha R1 o la Kawasaki Ninja H2, consideradas de las más rápidas del mundo.
+        Algunas motos deportivas pueden superar los 300 km/h, como la Yamaha R1 o la Kawasaki Ninja H2.
     </p>
-
-    <!-- ===== FIN INFO AGREGADA ===== -->
 
     <h3 style="background-color:red;color:white;text-align:center;">EL MOTOR DE UNA MOTO</h3>
 
@@ -149,9 +139,7 @@
 
     <hr>
 
-    <h3 style="background:navy;color:white;text-align:center;">
-        TIPOS DE MOTOS
-    </h3>
+    <h3 style="background:navy;color:white;text-align:center;">TIPOS DE MOTOS</h3>
 
     <img src="https://thfvnext.bing.com/th/id/OIP.Sb5Ay2UbjzUJvwSnCSgFuQHaEi?w=290&h=180&c=7&r=0&o=7&cb=thfvnextfalcon2&dpr=1.3&pid=1.7&rm=3" style="float:right;width:280px;margin-left:20px;border-radius:10px;">
 
@@ -174,7 +162,6 @@
     <h3 style="text-align:center;">TABLA DE MOTOS</h3>
 
     <table border="5" style="margin:auto; text-align:center;">
-
         <tr style="background:navy;">
             <th>Moto</th>
             <th>Velocidad</th>
@@ -182,7 +169,6 @@
             <th>Tipo</th>
             <th>Imagen</th>
         </tr>
-
         <tr>
             <td>Yamaha R1</td>
             <td>300 km/h</td>
@@ -190,7 +176,6 @@
             <td>Deportiva</td>
             <td><img src="https://thfvnext.bing.com/th/id/OIP.GSEyUX70w0hVO3kUTuLE1AHaE8?w=293&h=180&c=7&r=0&o=7&cb=thfvnextfalcon2&dpr=1.3&pid=1.7&rm=3" width="250"></td>
         </tr>
-
         <tr>
             <td>Honda CBR 600</td>
             <td>280 km/h</td>
@@ -198,7 +183,6 @@
             <td>Deportiva</td>
             <td><img src="https://tse4.mm.bing.net/th/id/OIP.BRJsEv-Dlvsn811dtIgT7AHaEU?r=0&cb=thfvnextfalcon2&w=2014&h=1174&rs=1&pid=ImgDetMain&o=7&rm=3" width="250"></td>
         </tr>
-
         <tr>
             <td>Kawasaki Ninja ZX-10R</td>
             <td>299 km/h</td>
@@ -206,7 +190,6 @@
             <td>Deportiva</td>
             <td><img src="https://thfvnext.bing.com/th/id/OIP.p2HikseTWHY80Gl8y9ZqKwHaFj?w=241&h=181&c=7&r=0&o=7&cb=thfvnextfalcon2&dpr=1.3&pid=1.7&rm=3" width="250"></td>
         </tr>
-
         <tr>
             <td>BMW S1000RR</td>
             <td>303 km/h</td>
@@ -214,7 +197,6 @@
             <td>Deportiva</td>
             <td><img src="https://thfvnext.bing.com/th/id/OIP.6Vk4tw1HhcW4TCAO47yq-wHaEs?w=312&h=180&c=7&r=0&o=7&cb=thfvnextfalcon2&dpr=1.3&pid=1.7&rm=3" width="250"></td>
         </tr>
-
         <tr>
             <td>Harley Davidson Iron 883</td>
             <td>180 km/h</td>
@@ -222,45 +204,48 @@
             <td>Cruiser</td>
             <td><img src="https://thfvnext.bing.com/th/id/OIP.4BCHoIhWBtx55NWqwW8logHaE8?w=266&h=180&c=7&r=0&o=7&cb=thfvnextfalcon2&dpr=1.3&pid=1.7&rm=3" width="250"></td>
         </tr>
-
     </table>
 
     <hr>
 
-    <!-- ===== BASE DE DATOS DE MOTOS ===== -->
-
     <h2 style="text-align:center;">🏍️ BASE DE DATOS DE MOTOS</h2>
 
     <div class="contenedor">
-
         <input type="text" id="idMoto" placeholder="ID (OBLIGATORIO)">
         <input type="text" id="nombreMoto" placeholder="NOMBRE (OBLIGATORIO)">
         <input type="text" id="tipoMoto" placeholder="TIPO">
         <input type="text" id="cilindradaMoto" placeholder="CILINDRADA">
 
-        <button class="btnBD" onclick="agregarMoto()">GUARDAR EN BD</button>
+        <button class="btnBD" onclick="agregarMoto()">GUARDAR</button>
 
         <h3>REGISTROS:</h3>
         <div id="resultado"></div>
-
     </div>
 
-    <!-- BOTÓN EXTRA -->
-    <div style="text-align:center;">
+    <div style="text-align:center; margin-top: 20px;">
         <button onclick="mostrarMensaje()">Presióname 😎</button>
     </div>
 
     <script>
-        const url = "http://localhost:3000";
+        const url = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" ? "http://localhost:3000" : "";
 
-        // guardar en servidor
         function agregarMoto() {
+            const inputId = document.getElementById("idMoto");
+            const inputNombre = document.getElementById("nombreMoto");
+            const inputTipo = document.getElementById("tipoMoto");
+            const inputCilindrada = document.getElementById("cilindradaMoto");
+
+            // Validación básica para evitar enviar datos vacíos
+            if (!inputId.value.trim() || !inputNombre.value.trim()) {
+                alert("Por favor, introduce el ID y el NOMBRE de la moto.");
+                return;
+            }
 
             let data = {
-                id: document.getElementById("idMoto").value,
-                nombre: document.getElementById("nombreMoto").value,
-                tipo: document.getElementById("tipoMoto").value,
-                cilindrada: document.getElementById("cilindradaMoto").value
+                id: inputId.value,
+                nombre: inputNombre.value,
+                tipo: inputTipo.value,
+                cilindrada: inputCilindrada.value
             };
 
             fetch(url + "/registrar", {
@@ -270,44 +255,57 @@
                     },
                     body: JSON.stringify(data)
                 })
-                .then(r => r.text())
+                .then(r => {
+                    if (!r.ok) throw new Error("Error en el servidor al registrar.");
+                    return r.text();
+                })
                 .then(msg => {
                     alert(msg);
-                    mostrar();
-                });
 
+                    // Limpiar el formulario tras el éxito
+                    inputId.value = "";
+                    inputNombre.value = "";
+                    inputTipo.value = "";
+                    inputCilindrada.value = "";
+
+                    mostrar(); // Actualizar la lista en pantalla
+                })
+                .catch(err => {
+                    console.error("Error:", err);
+                    alert("No se pudo conectar con el servidor.");
+                });
         }
 
-        // mostrar registros
         function mostrar() {
-
             fetch(url + "/motos")
-                .then(r => r.json())
+                .then(r => {
+                    if (!r.ok) throw new Error("Error al obtener el listado.");
+                    return r.json();
+                })
                 .then(data => {
-
                     let html = "";
-
                     data.forEach(m => {
                         html += `
-            <div class="moto-item">
-                <b>ID:</b> ${m.id}<br>
-                <b>NOMBRE:</b> ${m.nombre}<br>
-                <b>TIPO:</b> ${m.tipo}<br>
-                <b>CILINDRADA:</b> ${m.cilindrada}
-            </div>
-            `;
+                        <div class="moto-item">
+                            <b>ID:</b> ${m.id}<br>
+                            <b>NOMBRE:</b> ${m.nombre}<br>
+                            <b>TIPO:</b> ${m.tipo}<br>
+                            <b>CILINDRADA:</b> ${m.cilindrada}
+                        </div>`;
                     });
-
                     document.getElementById("resultado").innerHTML = html;
-
+                })
+                .catch(err => {
+                    console.error("Error:", err);
+                    document.getElementById("resultado").innerHTML = "<p style='color:red;'>No se pudieron cargar los datos del servidor.</p>";
                 });
-
         }
 
         function mostrarMensaje() {
             alert("¡LAS MOTOS SON LO MEJOR 🏍️!");
         }
 
+        // Llamada inicial para renderizar los datos existentes al abrir la web
         mostrar();
     </script>
 
