@@ -213,8 +213,8 @@
     <div class="contenedor">
         <input type="text" id="idMoto" placeholder="ID (OBLIGATORIO)">
         <input type="text" id="nombreMoto" placeholder="NOMBRE (OBLIGATORIO)">
-        <input type="text" id="tipoMoto" placeholder="TIPO">
-        <input type="text" id="cilindradaMoto" placeholder="CILINDRADA">
+        <input type="text" id="tipoMoto" placeholder="TIPO (OBLIGATORIO)">
+        <input type="text" id="cilindradaMoto" placeholder="CILINDRADA (OBLIGATORIO)">
 
         <button class="btnBD" onclick="agregarMoto()">GUARDAR</button>
 
@@ -235,10 +235,15 @@
             const inputTipo = document.getElementById("tipoMoto");
             const inputCilindrada = document.getElementById("cilindradaMoto");
 
-            // Validación básica para evitar enviar datos vacíos
-            if (!inputId.value.trim() || !inputNombre.value.trim()) {
-                alert("Por favor, introduce el ID y el NOMBRE de la moto.");
-                return;
+            // Validación estricta: Comprueba que NINGÚN campo esté vacío
+            if (
+                !inputId.value.trim() || 
+                !inputNombre.value.trim() || 
+                !inputTipo.value.trim() || 
+                !inputCilindrada.value.trim()
+            ) {
+                alert("Por favor, llena TODOS los campos antes de guardar.");
+                return; // Cancela la ejecución y evita el fetch
             }
 
             let data = {
